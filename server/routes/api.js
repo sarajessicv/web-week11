@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const Book = require('../models/Books');
+const Book = require('../models/Book');
 
 
 router.post('/book', (req, res, next) => {

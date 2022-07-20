@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "install": "cd client && npm install",
     "dev:client": "cd client && npm start",
     "preinstall": "cd server && npm install",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/sarajessicv/web-week11/issues"
   },
-  "homepage": "https://github.com/sarajessicv/web-week11#readme"
+  "homepage": "https://github.com/sarajessicv/web-week11#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
