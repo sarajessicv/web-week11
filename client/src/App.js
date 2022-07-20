@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Books</h1>
+      <h1>books</h1>
       <form onSubmit={onSubmit} onChange={onChange}>
       <input id="name" type="text" ref={nameInput} placeholder='Name of the book'></input>
       <input id="author" type="text" ref={authorInput} placeholder='Name of the author'></input>
