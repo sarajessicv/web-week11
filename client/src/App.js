@@ -15,7 +15,7 @@ function App() {
     e.preventDefault();
     
     console.log("testi2");
-    fetch("http://localhost:1234/api/book", {
+    fetch("/api/book", {
       method: "POST",
       headers: {
         "Content-type": "application/JSON"
