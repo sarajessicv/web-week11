@@ -1,3 +1,4 @@
+
 var express = require('express');
 var router = express.Router();
 const Book = require('../models/Book');
@@ -16,5 +17,15 @@ router.post('/book', (req, res, next) => {
     }
   )
 });
+
+
+router.get('/:book', (request, response, next) => {
+  Book.findOne({name: request.params.book}, (error, book) => {
+    if(error) throw error
+    else {
+      return response.json(book);
+    }
+  })
+})
 
 module.exports = router;
